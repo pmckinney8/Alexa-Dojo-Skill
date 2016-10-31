@@ -1,0 +1,34 @@
+{
+  "intents": [
+    {
+      "intent": "DojoInfoIntent"
+    },
+    {
+      "intent": "DojoStaffIntent"
+    },
+
+    {
+      "intent": "DojoStackIntent",
+      "slots" : [
+        {
+          "name": "City",
+          "type": "CITIES"
+        }
+      ]
+    },
+     {
+      "intent": "DojoInstructorIntent",
+      "slots" : [
+        {
+          "name": "City",
+          "type": "CITIES"
+        }
+      ]
+    },{
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    }
+  ]
+}
