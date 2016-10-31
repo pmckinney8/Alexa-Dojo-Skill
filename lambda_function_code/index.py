@@ -126,7 +126,7 @@ def get_dojo_info_response():
 def get_dojo_staff_response():
     session_attributes = {}
     card_title = "Dojo_Staff"
-    speech_output = "The coding dojo currently has 7 instructors. Their names are Anna, Oscar, Jay, Pariece, Brendan, Howard, and Eli."
+    speech_output = "The Coding Dojo has a number of instructors at different locations. Our current locations are San Jose, Seattle, Burbank, Dallas, Washington DC, and Chicago. If you want information about a particular location you can ask the Coding Dojo skill. So for example you can ask... who are the instructors at the Chicago location."
     reprompt_text = speech_output
     should_end_session = True
     return build_response(session_attributes, build_speechlet_response(card_title,speech_output,reprompt_text,should_end_session))
@@ -151,7 +151,7 @@ def get_dojo_stack_response(intent_request):
     elif dojo_city == "Seattle":
         speech_output = "The Seattle location teaches Python, MEAN, IOS, and Ruby on Rails."
     else:
-        speech_output = "The location provided is invalid."
+        speech_output = "Sorry, the Coding Dojo does not have a location that matches what you have asked for."
     reprompt_text = speech_output
     should_end_session = True
 
@@ -176,7 +176,7 @@ def get_dojo_instructor_response(intent_request):
     elif dojo_city == "Seattle":
         speech_output = "The Seattle instructors are Martin, Speros, and Charlie."
     else:
-        speech_output = "The location provided is invalid."
+        speech_output = "Sorry, the Coding Dojo does not have a location that matches what you have asked for."
     reprompt_text = speech_output
     should_end_session = True
 
@@ -185,8 +185,7 @@ def get_dojo_instructor_response(intent_request):
 
 def handle_session_end_request():
     card_title = "Session Ended"
-    speech_output = "Thank you for trying the Alexa Skills Kit sample. " \
-                    "Have a nice day! "
+    speech_output = "Thank you for using the Coding Dojo skill! We hope you enjoyed the experience."
     # Setting this to true ends the session and exits the skill.
     should_end_session = True
     return build_response({}, build_speechlet_response(
