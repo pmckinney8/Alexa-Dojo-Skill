@@ -22,20 +22,18 @@ def launch_skill():
 
     return question(welcome_msg)
 
-
 @ask.intent("DojoInfoIntent")
 
 def dojo_info():
     response = render_template("dojo_info_template")
     return statement(response)
 
-@ask.intent("AMAZON.HelpIntent")
+@ask.intent("DojoStaffIntent")
 
-def dojo_help():
-    response = render_template("help_template")
-    return question(response)
+def dojo_staff():
+    response = render_template("invalid_city")
 
-
+    return statement(response)
 
 @ask.intent("DojoStackIntent", convert={'City': str})
 
@@ -80,6 +78,17 @@ def dojo_instructors(City):
     return statement(response)
 
 
+@ask.intent("AMAZON.HelpIntent")
+
+def dojo_help():
+    response = render_template("help_template")
+    return question(response)
+
+@ask.intent("AMAZON.StopIntent")
+
+def dojo_stop():
+    response = render_template("stop_template")
+    return statement(response)
 
 
 if __name__ == '__main__':

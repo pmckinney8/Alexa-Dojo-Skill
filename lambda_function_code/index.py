@@ -1,7 +1,7 @@
 """
 This code sample is a part of a simple demo to show beginners how to create a skill (app) for the Amazon Echo using AWS Lambda and the Alexa Skills Kit.
 
-For the full code sample visit https://github.com/pmckinney8/Alexa_Skill_Dojo_Demo_Pyhton.git
+For the full code sample visit https://github.com/pmckinney8/Alexa_Dojo_Skill.git
 """
 
 from __future__ import print_function
