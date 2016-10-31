@@ -1,0 +1,36 @@
+welcome: Welcome to the Coding Dojo Skill. Great Job on getting started with your first skill. To get some examples of what this skill can do, ask for help now.
+
+dojo_info_template: "The Coding Dojo is a 3 month immersive web developement bootcamp. During these 3 months you will learn 3 full web developement stacks. The stacks that we offer are... Django, Rails, Mean, and IOS."
+
+help_template: "To begin, you can say... tell me about the coding dojo... or you can ask questions such as... what stacks does dallas teach. Feel free to try one out now!"
+
+invalid_city: "The location you asked for is invalid"
+
+
+# templates for the DojoStackIntent
+san_jose_stacks: "The {{ city }} location teaches Python, MEAN, IOS, and Ruby on Rails."
+
+chicago_stacks: "The {{ city }} location teaches Python, MEAN, and Ruby on Rails."
+
+seattle_stacks: "The {{ city }} location teaches Python, MEAN, IOS, and Ruby on Rails."
+
+washington_stacks: "The {{ city }} DC location teaches Python, MEAN, and Ruby on Rails."
+
+burbank_stacks: "The {{ city }} location teaches Python, MEAN, PHP, IOS, and Ruby on Rails."
+
+dallas_stacks: "The {{ city }} location teaches Python, MEAN, and Ruby on Rails."
+
+
+
+# templates for the DojoInstructorIntent
+san_jose_instructors: "The {{ city }} instructors are Pariece, Jay, and Brendan."
+
+chicago_instructors: "The {{ city }} instructors are Chris, and Mike."
+
+seattle_instructors: "The {{ city }} instructors are Martin, Speros, and Charlie."
+
+washington_instructors: "The {{ city }} DC instructors are Mihn, and Dan."
+
+burbank_instructors: "The {{ city }} instructors are Chris, Eduardo, and Lance."
+
+dallas_instructors: "The {{ city }} instructors are Authman, and Liam."
