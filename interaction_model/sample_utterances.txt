@@ -2,3 +2,5 @@ DojoInfoIntent what is the coding dojo
 DojoInfoIntent tell me about the coding dojo
 DojoStaffIntent who are the instructors
 DojoStaffIntent how many instructors work at coding dojo
+DojoStackIntent which stacks does {City} teach
+DojoInstructorIntent who are the instructors at the {City} location
